@@ -542,11 +542,6 @@ for model, scores in evaluation_results.items():
 - **Sınıflandırma raporları ve metrik sonuçlarının yer aldığı ekran görüntüleri.**
 
 ---
-# Veri Analizi ve Makine Öğrenmesi Projesi
-
-Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti, Kaggle'da [Musculoskeletal Disorders Risk in Students](https://www.kaggle.com/datasets/mrhmnshu/musculoskeletal-disorders-risk-in-students) başlığı altında erişilebilir.
-
----
 
 ## 17. Accuracyyi Artırma Yöntemleri
 
