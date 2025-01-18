@@ -471,12 +471,6 @@ print(f"Veri dengesizliği giderildi. Yeni veri seti boyutu: {X_resampled.shape}
 
 ---
 
-# Veri Analizi ve Makine Öğrenmesi Projesi
-
-Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti, Kaggle'da [Musculoskeletal Disorders Risk in Students](https://www.kaggle.com/datasets/mrhmnshu/musculoskeletal-disorders-risk-in-students) başlığı altında erişilebilir.
-
----
-
 ## 16. Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi
 
 ### Kod:
@@ -577,13 +571,15 @@ Makine öğrenmesi model performansını artırmak için aşağıdaki adımlar u
 ## 18. Web Scraping ile Veri Elde Etme Denemesi
 
 ### Açıklama:
-Bu projede kullanılan veri setinden önce, kendi veri setimizi oluşturmayı denedik. Bunun için **Ebay Teknoloji Kategorisi** üzerinden ürün bilgilerini toplamak amacıyla web scraping teknikleri kullandık.
+Bu projede kullanılan veri setinden önce, kendi veri setimizi oluşturmayı denedik. Bunun için **Ebay Teknoloji Kategorisi** üzerinden ürün bilgilerini toplamak amacıyla web scraping teknikleri kullandık. Elde edilen veriye ulaşmak için : [Web Scraping ile elde edilen veri](https://docs.google.com/spreadsheets/d/1_RGWBIPvF_kEPm4sgnAMkHdoS0TmS7gD/edit?usp=drive_link&ouid=110655962960934133918&rtpof=true&sd=true)
 
 - **Elde Edilen Veri:**
   - Ürün adı
   - Fiyat
-  - Satıcı puanı
+  - Kargo Bilgisi 
   - Ürün açıklamaları
+  - Yorum Sayısı ve Değerlendirme
+  - Satıcı Puanı 
 
 - **Karşılaşılan Zorluklar:**
   - Elde edilen veri, MSD risk tahmini gibi bir sınıflandırma problemi için uygun değildi.
