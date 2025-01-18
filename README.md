@@ -7,24 +7,25 @@ Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi
 ## İçindekiler
 
 1. [Proje Hedefi](#1-proje-hedefi)
-2. [Veri Yükleme ve Görüntüleme](#2-veri-yükleme-ve-görüntüleme)
-3. [Histogramlarla Veriyi Görselleştirme](#3-histogramlarla-veriyi-görselleştirme)
-4. [Veri Setinin Yapısını Anlama](#4-veri-setinin-yapısını-anlama)
-5. [Korelasyon Matrisi](#5-korelasyon-matrisi)
-6. [Eksik Değer Analizi ve Özet İstatistikler](#6-eksik-deger-analizi-ve-özet-istatistikler)
-7. [Kategorik Değişkenlerin İncelenmesi](#7-kategorik-değişkenlerin-incelenmesi)
-8. [MSD Riskinin İncelenmesi](#8-msd-riskinin-incelenmesi)
-9. [Cinsiyet Dağılımı](#9-cinsiyet-dağılımı)
-10. [Box Plot ile Değişkenlerin İncelenmesi](#10-box-plot-ile-değişkenlerin-incelenmesi)
-11. [Çanta Yüksekliği ve MSD Risk Analizi](#11-çanta-yüksekliği-ve-msd-risk-analizi)
-12. [Gender ve MSD Risk için One-Hot Encoding](#12-gender-ve-msd-risk-için-one-hot-encoding)
-13. [MSD Risk ve Grafiksel Analizler](#13-msd-risk-ve-grafiksel-analizler)
-14. [Aykırı Değer Analizi](#14-aykırı-değer-analizi)
-15. [SMOTE ile Veri Dengesizliğini Giderme](#15-smote-ile-veri-dengesizliğini-giderme)
-16. [Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi](#16-makine-öğrenmesi-modellerinin-eğitimi-ve-değerlendirilmesi)
-17. [Accuracyyi Artırma Yöntemleri](#17-accuracyyi-artirma-yöntemleri)
-18. [Web Scraping ile Veri Elde Etme Denemesi](#18-web-scraping-ile-veri-elde-etme-denemesi)
-19. [Proje ve Kodun İşleyişi](#19-proje-ve-kodun-işleyişi)
+2. [Veri Seti Özeti](#2-veri-seti-özeti)
+3. [Veri Yükleme ve Görüntüleme](#3-veri-yükleme-ve-görüntüleme)
+4. [Histogramlarla Veriyi Görselleştirme](#4-histogramlarla-veriyi-görselleştirme)
+5. [Veri Setinin Yapısını Anlama](#5-veri-setinin-yapısını-anlama)
+6. [Korelasyon Matrisi](#6-korelasyon-matrisi)
+7. [Eksik Değer Analizi ve Özet İstatistikler](#7-eksik-deger-analizi-ve-özet-istatistikler)
+8. [Kategorik Değişkenlerin İncelenmesi](#8-kategorik-değişkenlerin-incelenmesi)
+9. [MSD Riskinin İncelenmesi](#9-msd-riskinin-incelenmesi)
+10. [Cinsiyet Dağılımı](#10-cinsiyet-dağılımı)
+11. [Box Plot ile Değişkenlerin İncelenmesi](#11-box-plot-ile-değişkenlerin-incelenmesi)
+12. [Çanta Yüksekliği ve MSD Risk Analizi](#12-çanta-yüksekliği-ve-msd-risk-analizi)
+13. [Gender ve MSD Risk için One-Hot Encoding](#13-gender-ve-msd-risk-için-one-hot-encoding)
+14. [MSD Risk ve Grafiksel Analizler](#14-msd-risk-ve-grafiksel-analizler)
+15. [Aykırı Değer Analizi](#15-aykırı-değer-analizi)
+16. [SMOTE ile Veri Dengesizliğini Giderme](#16-smote-ile-veri-dengesizliğini-giderme)
+17. [Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi](#17-makine-öğrenmesi-modellerinin-eğitimi-ve-değerlendirilmesi)
+18. [Accuracyyi Artırma Yöntemleri](#18-accuracyyi-artirma-yöntemleri)
+19. [Web Scraping ile Veri Elde Etme Denemesi](#19-web-scraping-ile-veri-elde-etme-denemesi)
+20. [Proje ve Kodun İşleyişi](#20-proje-ve-kodun-işleyişi)
     
 ---
 
@@ -39,7 +40,33 @@ Bu projenin amacı:
 
 ---
 
-## 2. Veri Yükleme ve Görüntüleme
+## 2. Veri Seti Özeti
+
+Veri setimiz, öğrencilerde kas-iskelet sistemi bozuklukları riskini analiz etmek için kullanılmıştır. Aşağıda veri setindeki sütunlar ve bu sütunların açıklamaları bulunmaktadır:
+
+| **Sütun Adı**         | **Veri Tipi** | **Açıklama**                                                                               |
+|------------------------|---------------|-------------------------------------------------------------------------------------------|
+| `Gender`              | Kategorik     | Öğrencinin cinsiyeti (`Male`, `Female`).                                                  |
+| `Age`                 | Sayısal       | Öğrencinin yaşı.                                                                          |
+| `Height`              | Sayısal       | Öğrencinin boyu (santimetre cinsinden).                                                   |
+| `Weight`              | Sayısal       | Öğrencinin kilosu (kilogram cinsinden).                                                   |
+| `Backpack Weight`     | Sayısal       | Öğrencinin taşıdığı çantanın ağırlığı (kilogram cinsinden).                               |
+| `Backpack Height`     | Kategorik     | Çantanın öğrencinin vücudundaki konumu (`Shoulder Blades to Lower Back`, `On Buttocks`). |
+| `Sitting Hours`       | Sayısal       | Öğrencinin gün içerisinde oturarak geçirdiği saat miktarı.                                |
+| `Physical Activity`   | Kategorik     | Öğrencinin fiziksel aktivite seviyesi (`Low`, `Medium`, `High`).                         |
+| `msd_risk`            | Kategorik     | Öğrencideki kas-iskelet sistemi bozuklukları riski (`Low`, `Medium`, `High`).            |
+
+### Açıklama:
+1. **Gender:** Cinsiyet bilgisi, model için kategorik bir değişkendir.
+2. **Age, Height, Weight:** Öğrencilerin fiziksel özelliklerini yansıtan sayısal değişkenlerdir.
+3. **Backpack Weight ve Backpack Height:** Çantanın ağırlığı ve vücuttaki konumu, MSD riskini etkileyebilecek önemli faktörlerdir.
+4. **Sitting Hours:** Uzun süreli oturma, kas-iskelet sistemi bozuklukları riskini artırabileceği için bu sütun önemlidir.
+5. **Physical Activity:** Fiziksel aktivite seviyesi, MSD riskini azaltabilecek önemli bir etkendir.
+6. **msd_risk:** Bu veri setindeki hedef değişken, öğrencinin MSD riski sınıfını temsil eder (`Low`, `Medium`, `High`).
+
+---
+
+## 3. Veri Yükleme ve Görüntüleme
 
 ### Kod:
 ```python
@@ -73,7 +100,7 @@ df.head()
 
 ---
 
-## 3. Histogramlarla Veriyi Görselleştirme
+## 4. Histogramlarla Veriyi Görselleştirme
 
 ### Kod:
 ```python
@@ -123,7 +150,7 @@ plt.show()
 
 ---
 
-## 4. Veri Setinin Yapısını Anlama
+## 5. Veri Setinin Yapısını Anlama
 
 ### Kod:
 ```python
@@ -149,7 +176,7 @@ print(df_types)
 |:-------------------------------------------------------------------------------------------:|
 ---
 
-## 5. Korelasyon Matrisi
+## 6. Korelasyon Matrisi
 
 ### Kod:
 ```python
@@ -178,7 +205,7 @@ plt.show()
 
 ---
 
-## 6. Eksik Değer Analizi ve Özet İstatistikler
+## 7. Eksik Değer Analizi ve Özet İstatistikler
 
 ### Kod:
 ```python
@@ -210,7 +237,7 @@ print(basic_stats)
 
 ---
 
-## 7. Kategorik Değişkenlerin İncelenmesi
+## 8. Kategorik Değişkenlerin İncelenmesi
 
 ### Kod:
 ```python
@@ -245,7 +272,7 @@ plt.show()
 
 ---
 
-## 8. MSD Riskinin İncelenmesi
+## 9. MSD Riskinin İncelenmesi
 
 ### Kod:
 ```python
@@ -275,7 +302,7 @@ plt.show()
 
 ---
 
-## 9. Cinsiyet Dağılımı
+## 10. Cinsiyet Dağılımı
 
 ### Kod:
 ```python
@@ -300,7 +327,7 @@ plt.show()
 
 ---
 
-## 10. Box Plot ile Değişkenlerin İncelenmesi
+## 11. Box Plot ile Değişkenlerin İncelenmesi
 
 ### Kod:
 ```python
@@ -336,7 +363,7 @@ plt.show()
 
 ---
 
-## 11. Çanta Yüksekliği ve MSD Risk Analizi
+## 12. Çanta Yüksekliği ve MSD Risk Analizi
 
 ### Kod:
 ```python
@@ -380,7 +407,7 @@ print(df_cleaned.head())
 
 ---
 
-## 12. Gender ve MSD Risk için One-Hot Encoding
+## 13. Gender ve MSD Risk için One-Hot Encoding
 
 ### Kod:
 ```python
@@ -406,7 +433,7 @@ print(df_cleaned.head())
 
 ---
 
-## 13. MSD Risk ve Grafiksel Analizler
+## 14. MSD Risk ve Grafiksel Analizler
 
 ### Kod:
 ```python
@@ -449,7 +476,7 @@ plt.show()
 
 ---
 
-## 14. Aykırı Değer Analizi
+## 15. Aykırı Değer Analizi
 
 ### Kod:
 ```python
@@ -482,7 +509,7 @@ print(f"Aykırı değerler kaldırıldı. Güncel veri seti boyutu: {df_cleaned.
 
 ---
 
-## 15. SMOTE ile Veri Dengesizliğini Giderme
+## 16. SMOTE ile Veri Dengesizliğini Giderme
 
 ### Kod:
 ```python
@@ -506,7 +533,7 @@ print(f"Veri dengesizliği giderildi. Yeni veri seti boyutu: {X_resampled.shape}
 
 ---
 
-## 16. Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi
+## 17. Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi
 
 ### Kod:
 ```python
@@ -575,7 +602,7 @@ for model, scores in evaluation_results.items():
 
 ---
 
-## 17. Accuracyyi Artırma Yöntemleri
+## 18. Accuracyyi Artırma Yöntemleri
 
 Makine öğrenmesi model performansını artırmak için aşağıdaki adımlar uygulanabilir:
 
@@ -606,7 +633,7 @@ Makine öğrenmesi model performansını artırmak için aşağıdaki adımlar u
 
 ---
 
-## 18. Web Scraping ile Veri Elde Etme Denemesi
+## 19. Web Scraping ile Veri Elde Etme Denemesi
 
 ### Açıklama:
 Bu projede kullanılan veri setinden önce, kendi veri setimizi oluşturmayı denedik. Bunun için **Ebay Teknoloji Kategorisi** üzerinden ürün bilgilerini toplamak amacıyla web scraping teknikleri kullandık. Elde edilen veriye ulaşmak için : [Web Scraping ile elde edilen veri](https://docs.google.com/spreadsheets/d/1_RGWBIPvF_kEPm4sgnAMkHdoS0TmS7gD/edit?usp=drive_link&ouid=110655962960934133918&rtpof=true&sd=true)
@@ -632,7 +659,7 @@ Web scraping ile elde edilen veri, farklı projeler (örneğin, ürün fiyatland
 
 ---
 
-## 19. Proje ve Kodun İşleyişi
+## 20. Proje ve Kodun İşleyişi
 
 ### Açıklama:
 Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştığını detaylı şekilde açıkladım. Ayrıca, bu açıklamalara bir video ekleyerek kullanıcıların projeyi daha iyi anlamasını sağlamayı planlıyorum.
