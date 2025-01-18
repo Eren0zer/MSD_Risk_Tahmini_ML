@@ -137,16 +137,16 @@ print(df_types)
 ```
 
 ### Açıklama:
-1. Veri setinin satır ve sütun sayısı hesaplanarak genel boyut hakkında bilgi sağlanır.
+1. Veri setinin satır ve sütun sayısı hesaplanarak genel boyut hakkında bilgi sağlanır. Bu veri setimizin 10000 satır 13 sutün olduğunu görüyoruz.
 2. Her bir sütunun veri türü incelenir (örneğin, float, int, object).
 
 ### Analizin Amacı:
 - Veri setinin genel yapısını anlamak ve hangi türde veriler içerdiğini belirlemek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Satır ve sütun sayısını gösteren konsol çıktısı**.
-- **Değişken türlerini gösteren tablo veya çıktı**.
 
+| ![Image](https://github.com/user-attachments/assets/06a7bcf2-88fb-4201-b6b7-e70d958d2d60) |
+|:-------------------------------------------------------------------------------------------:|
 ---
 
 ## 5. Korelasyon Matrisi
@@ -172,7 +172,9 @@ plt.show()
 - Birbirine yüksek oranda bağlı değişkenleri tespit etmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Korelasyon matrisi ısı haritasının ekran görüntüsü**.
+
+| ![Image](https://github.com/user-attachments/assets/dd036c01-5c5d-4ac5-a8f9-b3f26922d281) |
+|:-------------------------------------------------------------------------------------------:|
 
 ---
 
@@ -200,8 +202,11 @@ print(basic_stats)
 - Özet istatistikler, verinin genel özelliklerini ve dağılımını anlamak için önemlidir.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Eksik değerlerin listesi**.
-- **Özet istatistiklerin gösterimi**.
+
+| ![Image](https://github.com/user-attachments/assets/ed6611e4-0ed8-49ea-ab3b-6b1919e226a8) | ![Image](https://github.com/user-attachments/assets/ece9ebbe-1a15-4cc0-9dbb-d0332d2ea599) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
+
 
 ---
 
@@ -234,8 +239,9 @@ plt.show()
 - Dağılımın dengesiz olup olmadığını kontrol etmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Kategorik değişkenlerin başlıca benzersiz değerlerini gösteren ekran görüntüsü**.
-- **Çanta ağırlığı dağılım grafiği**.
+
+| ![Image](https://github.com/user-attachments/assets/c2fe851e-4deb-4b12-a7be-5ec03836a098) | ![Image](https://github.com/user-attachments/assets/4a315439-e9cd-4b94-af8f-c8e80319f634) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
 
 ---
 
@@ -263,7 +269,9 @@ plt.show()
 - Sınıf dengesizliği olup olmadığını tespit etmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **MSD Riskinin benzersiz değerlerini ve dağılım grafiğini içeren ekran görüntüsü**.
+
+| ![Image](https://github.com/user-attachments/assets/d620f018-9b35-4076-a82c-55e769a1a740) |
+|:-------------------------------------------------------------------------------------------:|
 
 ---
 
@@ -286,7 +294,9 @@ plt.show()
 - Cinsiyet değişkeninin veri setindeki temsil oranını anlamak.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Cinsiyet dağılımını gösteren grafik**.
+
+| ![Image](https://github.com/user-attachments/assets/cd13cfec-5247-459f-923d-2d1c5ac45af9) |
+|:-------------------------------------------------------------------------------------------:|
 
 ---
 
@@ -315,7 +325,14 @@ plt.show()
 - Sayısal değişkenlerdeki aykırı değerleri tespit etmek ve genel dağılımı görselleştirmek.
 
 ### Ekran Görüntüsü Ekleyin:
--
+
+| ![Image](https://github.com/user-attachments/assets/8030234f-026b-4a36-97a6-2d50f534b195) | ![Image](https://github.com/user-attachments/assets/48b6b0d7-6011-42f5-bbc2-5e9ab8641b90) | ![Image](https://github.com/user-attachments/assets/a58eb618-6a39-47d6-8f3b-023e6c654919) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+| ![Image](https://github.com/user-attachments/assets/80db05df-5f46-40bc-afff-5527c16689bf) | ![Image](https://github.com/user-attachments/assets/8ed4de1e-6d38-4821-8b08-abd7255a01ae) | ![Image](https://github.com/user-attachments/assets/65bf5fd6-c049-4862-88ac-5276a109039f) |
+| ![Image](https://github.com/user-attachments/assets/c35440fa-6156-45f4-8f4f-50630edf7d84) | ![Image](https://github.com/user-attachments/assets/c7c31755-e881-4eae-8285-fea99607f5cc) | ![Image](https://github.com/user-attachments/assets/5bc32b3f-8a59-4a61-b197-3d10fdeb4385) |
+| ![Image](https://github.com/user-attachments/assets/0547636c-ce2f-4462-9504-0b09c01ba323) |                                                                                           |                                                                                           |
+
+
 
 ---
 
@@ -348,7 +365,7 @@ print(df_cleaned.head())
 
 ### Açıklama:
 1. **MSD Risk Seviyesi:** Çanta yüksekliği kategorilerine göre ortalama MSD risk seviyeleri hesaplanır.
-2. **Sıralı Kodlama vs. One-Hot Encoding:** Çanta yüksekliği için iki farklı kodlama yöntemi test edilerek One-Hot Encoding’in daha iyi sonuç verdiği gözlemlenir.
+2. **Sıralı Kodlama vs. One-Hot Encoding:** Çanta yüksekliği için iki farklı kodlama yöntemi test edilir. Sıralı kodlama 0.354 değerini verirken, One-Hot Encoding 0.367 değerini verir. One-Hot Encoding daha iyi sonuç verdiği gözlemlenir.
 3. **Son İşlem:** Gereksiz sütunlar temizlenir ve veri seti analiz için hazır hale getirilir.
 
 ### Analizin Amacı:
@@ -356,8 +373,10 @@ print(df_cleaned.head())
 - Farklı kodlama yöntemlerini test ederek en uygun yöntemi seçmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Ortalama MSD risk seviyelerini gösteren tablo**.
-- **One-Hot Encoding sonrası güncellenmiş veri setinin ekran görüntüsü**.
+
+| ![Image](https://github.com/user-attachments/assets/7bb5b136-edd2-46b7-949b-73ac0794007e) | ![Image](https://github.com/user-attachments/assets/45d46ac5-5c81-4381-bc9c-bfade54686f1) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
 
 ---
 
