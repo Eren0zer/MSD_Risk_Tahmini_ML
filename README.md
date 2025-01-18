@@ -67,8 +67,9 @@ df.head()
 2. **Sayfa isimleri** kontrol edilir ve ilk sayfa projeye dahil edilir.
 3. Veri setinin ilk 5 satırı görüntülenerek içeriğin genel yapısı incelenir.
 
-### Ekran Görüntüsü Ekleyin:
-Bu bölümde, **veri setinin ilk 5 satırını gösteren ekran görüntüsünü** ekleyebilirsiniz. Bu görüntü, veri setinin yapısını görsel olarak sunmayı kolaylaştırır.
+### Ekran Görüntüsü : 
+
+![Veri seti](https://github.com/user-attachments/assets/15075ecc-0a25-4fc1-a9b4-71db6568cc80)
 
 ---
 
