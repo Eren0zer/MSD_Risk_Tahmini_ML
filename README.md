@@ -594,6 +594,23 @@ Web scraping ile elde edilen veri, farklı projeler (örneğin, ürün fiyatland
 
 ---
 
+## 19. Proje ve Kodun İşleyişi
+
+### Açıklama:
+Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştığını detaylı şekilde açıkladım. Ayrıca, bu açıklamalara bir video ekleyerek kullanıcıların projeyi daha iyi anlamasını sağlamayı planlıyorum.
+
+### Video İçeriği:
+- Veri yükleme ve ön işleme adımları.
+- Grafiksel analizlerin nasıl yapıldığı ve sonuçların yorumlanması.
+- Aykırı değer analizi ve sınıf dengesizliğinin giderilmesi.
+- Makine öğrenmesi modellerinin eğitimi ve değerlendirilmesi.
+- Accuracy, recall, precision, ve F1 score sonuçlarının karşılaştırılması.
+
+### Video Ekleme:
+Bu bölüme bir YouTube veya diğer platform üzerinden erişilebilecek bir video bağlantısı eklenebilir. Video, projenin kodlama adımlarını ve genel mantığını izleyicilere açıklamak için etkili bir araç olacaktır.
+
+---
+
 
 
 
