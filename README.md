@@ -143,7 +143,7 @@ print(df_types)
 ### Analizin Amacı:
 - Veri setinin genel yapısını anlamak ve hangi türde veriler içerdiğini belirlemek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/06a7bcf2-88fb-4201-b6b7-e70d958d2d60) |
 |:-------------------------------------------------------------------------------------------:|
@@ -171,7 +171,7 @@ plt.show()
 - Değişkenler arasındaki doğrusal ilişkileri incelemek.
 - Birbirine yüksek oranda bağlı değişkenleri tespit etmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/dd036c01-5c5d-4ac5-a8f9-b3f26922d281) |
 |:-------------------------------------------------------------------------------------------:|
@@ -201,7 +201,7 @@ print(basic_stats)
 - Eksik değerlerin tespit edilmesi, eksik veri işleme adımlarına yön verir.
 - Özet istatistikler, verinin genel özelliklerini ve dağılımını anlamak için önemlidir.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/ed6611e4-0ed8-49ea-ab3b-6b1919e226a8) | ![Image](https://github.com/user-attachments/assets/ece9ebbe-1a15-4cc0-9dbb-d0332d2ea599) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
@@ -238,7 +238,7 @@ plt.show()
 - Kategorik değişkenlerin sınıf yapısını ve hangi kategorilere sahip olduğunu anlamak.
 - Dağılımın dengesiz olup olmadığını kontrol etmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/c2fe851e-4deb-4b12-a7be-5ec03836a098) | ![Image](https://github.com/user-attachments/assets/4a315439-e9cd-4b94-af8f-c8e80319f634) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
@@ -268,7 +268,7 @@ plt.show()
 - Hedef değişkenin sınıf yapısını anlamak.
 - Sınıf dengesizliği olup olmadığını tespit etmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/d620f018-9b35-4076-a82c-55e769a1a740) |
 |:-------------------------------------------------------------------------------------------:|
@@ -293,7 +293,7 @@ plt.show()
 ### Analizin Amacı:
 - Cinsiyet değişkeninin veri setindeki temsil oranını anlamak.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/cd13cfec-5247-459f-923d-2d1c5ac45af9) |
 |:-------------------------------------------------------------------------------------------:|
@@ -324,7 +324,7 @@ plt.show()
 ### Analizin Amacı:
 - Sayısal değişkenlerdeki aykırı değerleri tespit etmek ve genel dağılımı görselleştirmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/8030234f-026b-4a36-97a6-2d50f534b195) | ![Image](https://github.com/user-attachments/assets/48b6b0d7-6011-42f5-bbc2-5e9ab8641b90) | ![Image](https://github.com/user-attachments/assets/a58eb618-6a39-47d6-8f3b-023e6c654919) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
@@ -372,7 +372,7 @@ print(df_cleaned.head())
 - Çanta yüksekliği ile MSD risk seviyesi arasındaki ilişkiyi anlamak.
 - Farklı kodlama yöntemlerini test ederek en uygun yöntemi seçmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/7bb5b136-edd2-46b7-949b-73ac0794007e) | ![Image](https://github.com/user-attachments/assets/45d46ac5-5c81-4381-bc9c-bfade54686f1) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
@@ -398,7 +398,7 @@ print(df_cleaned.head())
 ### Analizin Amacı:
 - Cinsiyet ve MSD risk değişkenlerini modellerde kullanılabilir formata dönüştürmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/78e04765-08d2-4281-9cc3-91d2a9894696) | ![Image](https://github.com/user-attachments/assets/212788b0-0814-48ff-916a-b0589f3741a5) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
@@ -442,7 +442,7 @@ plt.show()
 - Hedef değişken olan MSD risk seviyelerinin dağılımını anlamak.
 - Çanta ağırlığı ve cinsiyetin MSD risk üzerindeki etkilerini görselleştirmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 | ![Image](https://github.com/user-attachments/assets/8d5a9259-b7aa-45c0-a1e8-d92877bf93ca) | ![Image](https://github.com/user-attachments/assets/43111ca7-3556-4e05-9023-152e79e0630c) | ![Image](https://github.com/user-attachments/assets/e0505b58-52af-488b-be10-f7383de07d24) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
 
@@ -475,7 +475,7 @@ print(f"Aykırı değerler kaldırıldı. Güncel veri seti boyutu: {df_cleaned.
 ### Analizin Amacı:
 - Veri setindeki uç değerlere bağlı hatalı model sonuçlarının önüne geçmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 
 | ![Image](https://github.com/user-attachments/assets/6dab06e8-4bf7-4287-9547-1bb200b7ce5c) |
 |:-------------------------------------------------------------------------------------------:|
@@ -567,7 +567,7 @@ for model, scores in evaluation_results.items():
 - Farklı makine öğrenmesi algoritmalarının performansını karşılaştırarak en iyi sonuç veren modeli belirlemek.
 - Model performanslarını doğruluk, kesinlik, geri çağırma ve F1 skoru üzerinden değerlendirmek.
 
-### Ekran Görüntüsü Ekleyin:
+### Ekran Görüntüsü:
 | ![Image](https://github.com/user-attachments/assets/5dfeb486-a7d1-4894-b317-c148e3fdbf7f) | ![Image](https://github.com/user-attachments/assets/1982024f-be3b-4be1-b9eb-8e735675d8ba) | ![Image](https://github.com/user-attachments/assets/69e3cbf3-77d1-48c6-b437-976760a52ee6) |
 |:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
 | **Support Vector Machine (SVM)**                                                                           | **Random Forest**                                                                    | **Logistic Regression**                                                          |
@@ -644,7 +644,7 @@ Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştı�
 - Makine öğrenmesi modellerinin eğitimi ve değerlendirilmesi.
 - Accuracy, recall, precision, ve F1 score sonuçlarının karşılaştırılması.
 
-### Video Ekleme:
+### Video:
 Bu bölüme bir YouTube veya diğer platform üzerinden erişilebilecek bir video bağlantısı eklenebilir. Video, projenin kodlama adımlarını ve genel mantığını izleyicilere açıklamak için etkili bir araç olacaktır.
 
 ---
