@@ -12,7 +12,7 @@ Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi
 4. [Histogramlarla Veriyi Görselleştirme](#4-histogramlarla-veriyi-görselleştirme)
 5. [Veri Setinin Yapısını Anlama](#5-veri-setinin-yapısını-anlama)
 6. [Korelasyon Matrisi](#6-korelasyon-matrisi)
-7. [Eksik Değer Analizi ve Özet İstatistikler](#7-eksik-deger-analizi-ve-özet-istatistikler)
+7. [Eksik Değer Analizi ve Özet İstatistikler](#7-eksik-değer-analizi-ve-özet-istatistikler)
 8. [Kategorik Değişkenlerin İncelenmesi](#8-kategorik-değişkenlerin-incelenmesi)
 9. [MSD Riskinin İncelenmesi](#9-msd-riskinin-incelenmesi)
 10. [Cinsiyet Dağılımı](#10-cinsiyet-dağılımı)
@@ -25,7 +25,7 @@ Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi
 17. [Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi](#17-makine-öğrenmesi-modellerinin-eğitimi-ve-değerlendirilmesi)
 18. [Accuracyyi Artırma Yöntemleri](#18-accuracyyi-artirma-yöntemleri)
 19. [Web Scraping ile Veri Elde Etme Denemesi](#19-web-scraping-ile-veri-elde-etme-denemesi)
-20. [Proje ve Kodun İşleyişi](#20-proje-ve-kodun-işleyişi)
+20. [Proje ve Kodun İşleyişi Hakkında Video](#20-proje-ve-kodun-işleyişi-hakkında-video)
     
 ---
 
@@ -659,7 +659,7 @@ Web scraping ile elde edilen veri, farklı projeler (örneğin, ürün fiyatland
 
 ---
 
-## 20. Proje ve Kodun İşleyişi
+## 20. Proje ve Kodun İşleyişi Hakkında Video
 
 ### Açıklama:
 Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştığını detaylı şekilde açıkladım. Ayrıca, bu açıklamalara bir video ekleyerek kullanıcıların projeyi daha iyi anlamasını sağlamayı planlıyorum.
