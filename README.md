@@ -303,11 +303,6 @@ plt.show()
 ### Ekran Görüntüsü Ekleyin:
 -
 
-
-# Veri Analizi ve Makine Öğrenmesi Projesi
-
-Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti, Kaggle'da [Musculoskeletal Disorders Risk in Students](https://www.kaggle.com/datasets/mrhmnshu/musculoskeletal-disorders-risk-in-students) başlığı altında erişilebilir.
-
 ---
 
 ## 11. Çanta Yüksekliği ve MSD Risk Analizi
@@ -349,12 +344,6 @@ print(df_cleaned.head())
 ### Ekran Görüntüsü Ekleyin:
 - **Ortalama MSD risk seviyelerini gösteren tablo**.
 - **One-Hot Encoding sonrası güncellenmiş veri setinin ekran görüntüsü**.
-
----
-
-# Veri Analizi ve Makine Öğrenmesi Projesi
-
-Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti, Kaggle'da [Musculoskeletal Disorders Risk in Students](https://www.kaggle.com/datasets/mrhmnshu/musculoskeletal-disorders-risk-in-students) başlığı altında erişilebilir.
 
 ---
 
