@@ -24,6 +24,7 @@ Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi
 16. [Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi](#16-makine-ogrenmesi-modellerinin-egitimi-ve-degerlendirilmesi)
 17. [Accuracyyi Artırma Yöntemleri](#17-accuracyyi-artirma-yontemleri)
 18. [Web Scraping ile Veri Elde Etme Denemesi](#18-web-scraping-ile-veri-elde-etme-denemesi)
+19. [Proje ve Kodun İşleyişi](#19-proje-ve-kodun-işleyişi)
     
 ---
 
