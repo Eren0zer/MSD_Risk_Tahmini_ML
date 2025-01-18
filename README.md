@@ -67,7 +67,7 @@ df.head()
 2. **Sayfa isimleri** kontrol edilir ve ilk sayfa projeye dahil edilir.
 3. Veri setinin ilk 5 satırı görüntülenerek içeriğin genel yapısı incelenir.
 
-### Ekran Görüntüsü : 
+### Ekran Görüntüsü: 
 
 ![Veri seti](https://github.com/user-attachments/assets/15075ecc-0a25-4fc1-a9b4-71db6568cc80)
 
@@ -106,8 +106,20 @@ plt.show()
 - Sayısal sütunların veri dağılımını incelemek ve olası aykırı değerleri tespit etmek.
 - Verinin genel yapısını daha iyi anlamak.
 
-### Ekran Görüntüsü Ekleyin:
-- Bu bölümde, **her bir sayısal sütun için oluşturulan histogramların ekran görüntülerini** ekleyebilirsiniz.
+### Ekran Görüntüsü:
+| ![Image 1](https://github.com/user-attachments/assets/d9467630-1605-4b24-9a2c-b8b03dd0b391) | ![Image 2](https://github.com/user-attachments/assets/081ef6e3-0a8b-448b-bef9-82d086272a8b) | ![Image 3](https://github.com/user-attachments/assets/22135065-1441-47ac-b38f-c69c067c4662) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
+| ![Image 4](https://github.com/user-attachments/assets/a2c23bc3-c4e3-4fa2-8fa8-421c35e6da1b) | ![Image 5](https://github.com/user-attachments/assets/37ce5f40-782a-4aee-b50d-13947ca7d834) | ![Image 6](https://github.com/user-attachments/assets/93c9ec42-f4d1-4846-9315-2503cd5f35e5) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
+| ![Image 7](https://github.com/user-attachments/assets/9972aa7d-13ac-4cf1-8d9e-d3bbee716042) | ![Image 8](https://github.com/user-attachments/assets/7516020f-0358-4643-91fd-8172f7762dcb) | ![Image 9](https://github.com/user-attachments/assets/4e03e874-555d-4efe-9480-4dcae1da12c2) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
+| ![Image 10](https://github.com/user-attachments/assets/083d1643-f9dd-4ed2-8401-3eda534c39e2) |
+|:-------------------------------------------------------------------------------------------:|
+
+
 
 ---
 
