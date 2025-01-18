@@ -399,7 +399,10 @@ print(df_cleaned.head())
 - Cinsiyet ve MSD risk değişkenlerini modellerde kullanılabilir formata dönüştürmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Gender ve MSD Risk için One-Hot Encoding sonrası veri seti görüntüsü**.
+
+| ![Image](https://github.com/user-attachments/assets/78e04765-08d2-4281-9cc3-91d2a9894696) | ![Image](https://github.com/user-attachments/assets/212788b0-0814-48ff-916a-b0589f3741a5) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
 
 ---
 
@@ -440,9 +443,9 @@ plt.show()
 - Çanta ağırlığı ve cinsiyetin MSD risk üzerindeki etkilerini görselleştirmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **MSD Risk dağılım grafiği**.
-- **MSD Risk - Çanta Ağırlığı boxplot grafiği**.
-- **MSD Risk - Gender karşılaştırma grafiği**.
+| ![Image](https://github.com/user-attachments/assets/8d5a9259-b7aa-45c0-a1e8-d92877bf93ca) | ![Image](https://github.com/user-attachments/assets/43111ca7-3556-4e05-9023-152e79e0630c) | ![Image](https://github.com/user-attachments/assets/e0505b58-52af-488b-be10-f7383de07d24) |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+
 
 ---
 
@@ -473,7 +476,9 @@ print(f"Aykırı değerler kaldırıldı. Güncel veri seti boyutu: {df_cleaned.
 - Veri setindeki uç değerlere bağlı hatalı model sonuçlarının önüne geçmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Aykırı değerlerin kaldırılmasından önce ve sonra veri seti boyutları**.
+
+| ![Image](https://github.com/user-attachments/assets/6dab06e8-4bf7-4287-9547-1bb200b7ce5c) |
+|:-------------------------------------------------------------------------------------------:|
 
 ---
 
@@ -498,9 +503,6 @@ print(f"Veri dengesizliği giderildi. Yeni veri seti boyutu: {X_resampled.shape}
 
 ### Analizin Amacı:
 - Modelin sınıf dengesizliğinden kaynaklanan yanlılıklarını ortadan kaldırmak.
-
-### Ekran Görüntüsü Ekleyin:
-- **SMOTE öncesi ve sonrası veri seti boyutları**.
 
 ---
 
@@ -566,7 +568,10 @@ for model, scores in evaluation_results.items():
 - Model performanslarını doğruluk, kesinlik, geri çağırma ve F1 skoru üzerinden değerlendirmek.
 
 ### Ekran Görüntüsü Ekleyin:
-- **Sınıflandırma raporları ve metrik sonuçlarının yer aldığı ekran görüntüleri.**
+| ![Image](https://github.com/user-attachments/assets/5dfeb486-a7d1-4894-b317-c148e3fdbf7f) | ![Image](https://github.com/user-attachments/assets/1982024f-be3b-4be1-b9eb-8e735675d8ba) | ![Image](https://github.com/user-attachments/assets/69e3cbf3-77d1-48c6-b437-976760a52ee6) |
+|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
+| **Support Vector Machine (SVM)**                                                                           | **Random Forest**                                                                    | **Logistic Regression**                                                          |
+
 
 ---
 
