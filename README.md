@@ -599,6 +599,57 @@ for model, scores in evaluation_results.items():
 |:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
 | **Support Vector Machine (SVM)**                                                                           | **Random Forest**                                                                    | **Logistic Regression**                                                          |
 
+### 1. Random Forest
+
+#### Avantajlar:
+- **Dengeli Performans**: Random Forest, tüm etiketler için dengeli bir performans göstermektedir.
+- **Düşük Risk Doğruluğu**: Özellikle düşük MSD risk seviyelerinde daha iyi bir doğruluk oranı sunar.
+
+#### Dezavantajlar:
+- **Orta Risk Hataları**: Medium risk seviyesi için hatalı tahmin oranı görece yüksektir.
+
+---
+
+### 2. Lojistik Regresyon
+
+#### Avantajlar:
+- **Hızlı Performans**: Basit yapısı sayesinde veri setinde hızlı çalışmaktadır.
+- **Orta Risk İçin Yüksek Geri Çağırma**: Medium risk seviyesi için geri çağırma oranı yüksektir.
+
+#### Dezavantajlar:
+- **Precision Düşüklüğü**: High ve Low risk seviyeleri için precision düşüktür.
+- **Dengesiz Performans**: Etiketler arası performans farklılıkları bulunmaktadır.
+
+---
+
+### 3. SVM
+
+#### Avantajlar:
+- **Low Risk İçin En Yüksek Precision**: Low risk seviyesi için en iyi precision değerini sağlar.
+- **Ayrım Yeteneği**: Farklı sınıfların ayrıcı çizgisini belirlemede başarılıdır.
+
+#### Dezavantajlar:
+- **Orta Risk F1 Skoru**: Medium risk seviyesi için düşük bir F1 skoru bulunmaktadır.
+- **Hesaplama Maliyeti**: Diğer algoritmalara göre hesaplama süresi daha uzun olabilir.
+
+---
+
+### 4. Karşılaştırmalı Sonuçlar
+
+#### Doğruluk (Accuracy):
+- Random Forest en yüksek doğruluk oranına sahiptir (0.685).
+- Lojistik Regresyon ve SVM, doğruluk açısından benzer sonuçlar göstermiştir (0.667).
+
+#### F1-Score:
+- Random Forest, F1-Score açısından en iyi sonuçları vermektedir. Bu, dengesiz veri setlerinde daha güvenilir tahminler yaptığını gösterir.
+
+#### Sınıf Dengesizliği:
+- Tüm algoritmalar, düşük risk seviyelerinde daha iyi sonuçlar verirken, Medium risk seviyesinde genellikle düşük performans sergilemiştir. Bu, veri setindeki sınıf dengesizliğinden kaynaklanıyor olabilir.
+
+#### Uygun Algoritma Seçimi:
+- Eğer Medium risk seviyesi için tahminler daha kritikse, Lojistik Regresyon tercih edilebilir.
+- Daha dengeli bir performans için Random Forest önerilir.
+- Sınıf ayrımı daha belirgin olan veri setlerinde SVM daha iyi performans gösterebilir.
 
 ---
 
