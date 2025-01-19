@@ -2,7 +2,7 @@
 
 Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti, Kaggle'da [Musculoskeletal Disorders Risk in Students](https://www.kaggle.com/datasets/mrhmnshu/musculoskeletal-disorders-risk-in-students) başlığı altında erişilebilir.
 > "Bu bölümde yer alan kodlar, projeyi genel olarak açıklamak için sembolik olarak sunulmuştur. Asıl kodlar ve detaylı uygulama dosya içerisinde bulunmaktadır. README'deki açıklama sırası, dosyada bulunan kodların sırasıyla birebir uyumludur. Proje adımlarını takip etmek için README ile kod dosyalarını kolayca eşleştirebilirsiniz."
-> [Colab linki](https://colab.research.google.com/drive/1e9qQBF-hBKqbajht7iKgEspUneL5BPHe)
+>> [Colab linki](https://colab.research.google.com/drive/1e9qQBF-hBKqbajht7iKgEspUneL5BPHe)
 ---
 
 ## İçindekiler
