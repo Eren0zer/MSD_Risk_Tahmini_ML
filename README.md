@@ -546,18 +546,24 @@ print(f"Veri dengesizliği giderildi. Yeni veri seti boyutu: {X_resampled.shape}
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from xgboost import XGBClassifier
 from sklearn.metrics import classification_report, accuracy_score, precision_score, recall_score, f1_score
 
 # Modellerin tanımlanması
 rf_model = RandomForestClassifier(random_state=42)
 log_reg_model = LogisticRegression(max_iter=1000, random_state=42)
 svm_model = SVC(random_state=42, probability=True)
+knn_model = KNeighborsClassifier(n_neighbors=5)
+xgb_model = XGBClassifier(eval_metric='mlogloss', use_label_encoder=False, random_state=42)
 
 # Modellerin saklanması
 models = {
     'Random Forest': rf_model,
     'Logistic Regression': log_reg_model,
-    'SVM': svm_model
+    'SVM': svm_model,
+    'KNN': knn_model,
+    'XGBoost': xgb_model
 }
 
 # Sonuçları saklamak için bir dictionary
@@ -589,6 +595,7 @@ for model, scores in evaluation_results.items():
     print(f"{model}:")
     for metric, value in scores.items():
         print(f"  {metric}: {value:.4f}")
+
 ```
 
 ### Açıklama:
