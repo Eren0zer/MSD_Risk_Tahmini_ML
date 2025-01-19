@@ -765,7 +765,7 @@ Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştı�
 - Accuracy, recall, precision, ve F1 score sonuçlarının karşılaştırılması.
 
 ### Video:
-Bu bölüme bir YouTube veya diğer platform üzerinden erişilebilecek bir video bağlantısı eklenebilir. Video, projenin kodlama adımlarını ve genel mantığını izleyicilere açıklamak için etkili bir araç olacaktır.
+https://youtu.be/iN2WHTnRDgo
 
 ---
 
