@@ -26,7 +26,7 @@ Bu proje, öğrencilerde kas-iskelet sistemi bozuklukları riskini tahmin etmeyi
 17. [Makine Öğrenmesi Modellerinin Eğitimi ve Değerlendirilmesi](#17-makine-öğrenmesi-modellerinin-eğitimi-ve-değerlendirilmesi)
 18. [Accuracyyi Artırma Yöntemleri](#18-accuracyyi-artirma-yöntemleri)
 19. [Web Scraping ile Veri Elde Etme Denemesi](#19-web-scraping-ile-veri-elde-etme-denemesi)
-20. [Proje ve Kodun İşleyişi Hakkında Video](#20-proje-ve-kodun-işleyişi-hakkında-video)
+20. [Sertifikalar ve Kodun İşleyişi Hakkında Video](#20-sertifikalar-ve-kodun-işleyişi-hakkında-video) 
     
 ---
 
@@ -752,10 +752,10 @@ Web scraping ile elde edilen veri, farklı projeler (örneğin, ürün fiyatland
 
 ---
 
-## 20. Proje ve Kodun İşleyişi Hakkında Video
+## 20. Sertifikalar ve Kodun İşleyişi Hakkında Video
 
 ### Açıklama:
-Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştığını detaylı şekilde açıkladım. Ayrıca, bu açıklamalara bir video ekleyerek kullanıcıların projeyi daha iyi anlamasını sağlamayı planlıyorum.
+Bir video ekleyerek kullanıcıların projeyi daha iyi anlamasını sağlamayı planlıyorum.
 
 ### Video İçeriği:
 - Veri yükleme ve ön işleme adımları.
@@ -766,6 +766,11 @@ Bu bölümde, proje boyunca kullanılan kodun ve adımların nasıl çalıştı�
 
 ### Video:
 https://youtu.be/iN2WHTnRDgo
+
+### Sertifikalar:
+| ![Image](https://github.com/user-attachments/assets/086d19b9-8618-41ff-a1ba-72617976ed45) | ![Image](https://github.com/user-attachments/assets/47059c10-cedd-4a30-a92b-3432e573c8b4) | ![Image](https://github.com/user-attachments/assets/ed6f859f-42b5-4b28-9881-a20859405f88) | ![Image](https://github.com/user-attachments/assets/5ca97487-04f6-4ef1-8ef1-4e5481a4baa8) |
+|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
+| **Derin Öğrenme Sertifikası**                                                         | **Derin Öğrenme Başarı Sertifikası**                                                                       | **Makine Öğrenmesi Sertifikası**                                                             | **Makine Öğrenmesi Başarı Sertifikası**                                                                            | 
 
 ---
 
