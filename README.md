@@ -45,25 +45,35 @@ Bu projenin amacı:
 
 Veri setimiz, öğrencilerde kas-iskelet sistemi bozuklukları riskini analiz etmek için kullanılmıştır. Aşağıda veri setindeki sütunlar ve bu sütunların açıklamaları bulunmaktadır:
 
-| **Sütun Adı**         | **Veri Tipi** | **Açıklama**                                                                               |
-|------------------------|---------------|-------------------------------------------------------------------------------------------|
-| `Gender`              | Kategorik     | Öğrencinin cinsiyeti (`Male`, `Female`).                                                  |
-| `Age`                 | Sayısal       | Öğrencinin yaşı.                                                                          |
-| `Height`              | Sayısal       | Öğrencinin boyu (santimetre cinsinden).                                                   |
-| `Weight`              | Sayısal       | Öğrencinin kilosu (kilogram cinsinden).                                                   |
-| `Backpack Weight`     | Sayısal       | Öğrencinin taşıdığı çantanın ağırlığı (kilogram cinsinden).                               |
-| `Backpack Height`     | Kategorik     | Çantanın öğrencinin vücudundaki konumu (`Shoulder Blades to Lower Back`, `On Buttocks`). |
-| `Sitting Hours`       | Sayısal       | Öğrencinin gün içerisinde oturarak geçirdiği saat miktarı.                                |
-| `Physical Activity`   | Kategorik     | Öğrencinin fiziksel aktivite seviyesi (`Low`, `Medium`, `High`).                         |
-| `msd_risk`            | Kategorik     | Öğrencideki kas-iskelet sistemi bozuklukları riski (`Low`, `Medium`, `High`).            |
+| **Sütun Adı**              | **Veri Tipi** | **Açıklama**                                                                               |
+|----------------------------|---------------|-------------------------------------------------------------------------------------------|
+| `Gender`                  | Kategorik     | Öğrencinin cinsiyeti (`Male`, `Female`).                                                  |
+| `Age`                     | Sayısal       | Öğrencinin yaşı.                                                                          |
+| `Height`                  | Sayısal       | Öğrencinin boyu (santimetre cinsinden).                                                   |
+| `Weight`                  | Sayısal       | Öğrencinin kilosu (kilogram cinsinden).                                                   |
+| `Backpack Weight`         | Sayısal       | Öğrencinin taşıdığı çantanın ağırlığı (kilogram cinsinden).                               |
+| `Backpack Height`         | Kategorik     | Çantanın öğrencinin vücudundaki konumu (`Shoulder Blades to Lower Back`, `On Buttocks`). |
+| `Sitting Hours`           | Sayısal       | Öğrencinin gün içerisinde oturarak geçirdiği saat miktarı.                                |
+| `Physical Activity`       | Kategorik     | Öğrencinin fiziksel aktivite seviyesi (`Low`, `Medium`, `High`).                         |
+| `Cervical Deviation`      | Sayısal       | Boyun bölgesindeki eğrilik miktarı (derece cinsinden).                                    |
+| `Thoracic Deviation`      | Sayısal       | Göğüs bölgesindeki eğrilik miktarı (derece cinsinden).                                    |
+| `Lumbar Deviation`        | Sayısal       | Bel bölgesindeki eğrilik miktarı (derece cinsinden).                                      |
+| `Pelvic Tilt Deviation`   | Sayısal       | Pelvis bölgesindeki eğrilik miktarı (derece cinsinden).                                   |
+| `Craniovertebral Angle`   | Sayısal       | Kafatası ve omurga arasındaki açı (derece cinsinden).                                     |
+| `Shoulder Level Deviation`| Sayısal       | Omuz seviyelerindeki simetri bozukluğu (derece cinsinden).                                |
+| `msd_risk`                | Kategorik     | Öğrencideki kas-iskelet sistemi bozuklukları riski (`Low`, `Medium`, `High`).            |
+
 
 ### Açıklama:
-1. **Gender:** Cinsiyet bilgisi, model için kategorik bir değişkendir.
-2. **Age, Height, Weight:** Öğrencilerin fiziksel özelliklerini yansıtan sayısal değişkenlerdir.
-3. **Backpack Weight ve Backpack Height:** Çantanın ağırlığı ve vücuttaki konumu, MSD riskini etkileyebilecek önemli faktörlerdir.
-4. **Sitting Hours:** Uzun süreli oturma, kas-iskelet sistemi bozuklukları riskini artırabileceği için bu sütun önemlidir.
-5. **Physical Activity:** Fiziksel aktivite seviyesi, MSD riskini azaltabilecek önemli bir etkendir.
-6. **msd_risk:** Bu veri setindeki hedef değişken, öğrencinin MSD riski sınıfını temsil eder (`Low`, `Medium`, `High`).
+1. **Gender:** Öğrencinin cinsiyet bilgisi (`Male`, `Female`) ve model için kategorik bir değişkendir.
+2. **Age, Height, Weight:** Öğrencilerin fiziksel özelliklerini yansıtan sayısal değişkenlerdir. Yaş, boy ve kilo, MSD riskini etkileyen temel faktörlerdir.
+3. **Backpack Weight ve Backpack Height:** Çantanın ağırlığı ve vücuttaki konumu, öğrencinin kas-iskelet sistemi üzerindeki etkileri değerlendirmek için kritik değişkenlerdir.
+4. **Sitting Hours:** Gün içinde oturma süresi, kas-iskelet sistemi bozuklukları riskini artırabileceği için önemli bir değişkendir.
+5. **Physical Activity:** Öğrencinin fiziksel aktivite seviyesi (`Low`, `Medium`, `High`), MSD riskini azaltabilecek bir etkendir ve modelin performansı için belirleyicidir.
+6. **Cervical Deviation, Thoracic Deviation, Lumbar Deviation:** Boyun, göğüs ve bel bölgesindeki eğrilik miktarları (derece cinsinden) MSD riskini anlamak için önemlidir.
+7. **Pelvic Tilt Deviation ve Shoulder Level Deviation:** Pelvis eğriliği ve omuz seviyesindeki simetri bozuklukları, risk faktörlerini belirlemek için kullanılan sayısal değişkenlerdir.
+8. **Craniovertebral Angle:** Kafatası ve omurga arasındaki açı, postür ile ilgili kritik bilgiler sunar.
+9. **msd_risk:** Bu veri setindeki hedef değişken, öğrencinin MSD risk sınıfını (`Low`, `Medium`, `High`) temsil eder ve sınıflandırma modellerinde kullanılmaktadır.
 
 ---
 
