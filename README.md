@@ -358,8 +358,11 @@ plt.show()
 | ![Image](https://github.com/user-attachments/assets/80db05df-5f46-40bc-afff-5527c16689bf) | ![Image](https://github.com/user-attachments/assets/8ed4de1e-6d38-4821-8b08-abd7255a01ae) | ![Image](https://github.com/user-attachments/assets/65bf5fd6-c049-4862-88ac-5276a109039f) |
 | ![Image](https://github.com/user-attachments/assets/c35440fa-6156-45f4-8f4f-50630edf7d84) | ![Image](https://github.com/user-attachments/assets/c7c31755-e881-4eae-8285-fea99607f5cc) | ![Image](https://github.com/user-attachments/assets/5bc32b3f-8a59-4a61-b197-3d10fdeb4385) |
 | ![Image](https://github.com/user-attachments/assets/0547636c-ce2f-4462-9504-0b09c01ba323) |                                                                                           |                                                                                           |
-
-
+### Analiz:
+- Thoracic Deviation ve Lumbar Deviation değişkenlerinde aykırı değerler tespit edilmiştir. Bu aykırı değerlerin etkisi, veri analizi sırasında incelenmeli ve gerektiğinde çıkarılmalıdır.
+- Diğer değişkenler normal bir dağılım sergilemektedir ve medyan değerler genel dağılımın ortasında yer almaktadır.
+- Çocuk yaşı ve boyu gibi değişkenlerin dar bir aralığı kapsadığı görülüyor. Bu, veri setinin odaklandığı yaş grubuyla uyumludur.
+- Aykırı değerlerin modellenmesi ve sınıflandırma işlemleri üzerindeki etkisi SMOTE ve diğer veri işleme teknikleriyle dengelenebilir.
 
 ---
 
@@ -473,7 +476,10 @@ plt.show()
 | ![Image](https://github.com/user-attachments/assets/8d5a9259-b7aa-45c0-a1e8-d92877bf93ca) | ![Image](https://github.com/user-attachments/assets/43111ca7-3556-4e05-9023-152e79e0630c) | ![Image](https://github.com/user-attachments/assets/e0505b58-52af-488b-be10-f7383de07d24) |
 |:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
 
-
+### Analiz:
+- Veri setinde düşük risk seviyesi baskındır, ancak risk seviyeleri arasında çok büyük bir dengesizlik görülmemektedir. Bu durum, modelin sınıflandırma sırasında her sınıfa eşit önem verebilmesi için bir avantajdır.
+- Çanta ağırlığının, MSD risk seviyeleri üzerinde önemli bir ayrıştırıcı özellik olmadığını söyleyebiliriz.
+- Grafikler, cinsiyet değişkeninin farklı risk seviyelerinde belirleyici bir rol oynayabileceğini göstermektedir. Bu nedenle, cinsiyet özelliği modellerde mutlaka kullanılmalıdır.
 ---
 
 ## 15. Aykırı Değer Analizi
