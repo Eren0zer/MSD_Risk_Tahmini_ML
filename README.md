@@ -601,9 +601,10 @@ for model, scores in evaluation_results.items():
 - Model performanslarını doğruluk, kesinlik, geri çağırma ve F1 skoru üzerinden değerlendirmek.
 
 ### Ekran Görüntüsü:
-| ![Image](https://github.com/user-attachments/assets/5dfeb486-a7d1-4894-b317-c148e3fdbf7f) | ![Image](https://github.com/user-attachments/assets/1982024f-be3b-4be1-b9eb-8e735675d8ba) | ![Image](https://github.com/user-attachments/assets/69e3cbf3-77d1-48c6-b437-976760a52ee6) |
-|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
-| **Support Vector Machine (SVM)**                                                                           | **Random Forest**                                                                    | **Logistic Regression**                                                          |
+| ![Image](https://github.com/user-attachments/assets/5dfeb486-a7d1-4894-b317-c148e3fdbf7f) | ![Image](https://github.com/user-attachments/assets/1982024f-be3b-4be1-b9eb-8e735675d8ba) | ![Image](https://github.com/user-attachments/assets/69e3cbf3-77d1-48c6-b437-976760a52ee6) | ![Image](https://github.com/user-attachments/assets/c084472c-b742-4c8c-9868-606afe7a4afd) | ![Image](https://github.com/user-attachments/assets/b0e022eb-0381-4db8-9ecc-de3669c21150) |
+|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
+| **Support Vector Machine (SVM)**                                                         | **Random Forest**                                                                       | **Logistic Regression**                                                             | **XGBoost**                                                                            | **K-Nearest Neighbors (KNN)**                                                                    |
+
 
 ### 1. Random Forest
 
