@@ -599,7 +599,7 @@ for model, scores in evaluation_results.items():
 ```
 
 ### Açıklama:
-1. **Modellerin Eğitimi:** Random Forest, Logistic Regression ve SVM algoritmaları kullanılarak veri seti üzerinde modeller eğitildi.
+1. **Modellerin Eğitimi:** Random Forest, Logistic Regression, SVM, K-Nearest Neighbors (KNN) ve XGBoost algoritmaları kullanılarak veri seti üzerinde modeller eğitildi.
 2. **Değerlendirme Metriği:** Her model için doğruluk (accuracy), kesinlik (precision), geri çağırma (recall) ve F1 skoru hesaplandı.
 3. **Sonuçların Analizi:** Her model için sınıflandırma raporu ve metriğe dayalı performans sonuçları yazdırıldı.
 
@@ -648,23 +648,49 @@ for model, scores in evaluation_results.items():
 
 ---
 
-### 4. Karşılaştırmalı Sonuçlar
+### 4. KNN (K-Nearest Neighbors)
+
+#### Avantajlar:
+- **Kolay Yorumlanabilirlik**: KNN, parametresiz ve kolay anlaşılabilir bir algoritmadır.
+- **Orta Risk Seviyesi Performansı**: Precision ve recall değerleri dengelidir.
+
+#### Dezavantajlar:
+- **Hassasiyet Eksikliği**: Aykırı değerlere karşı hassastır.
+- **Hesaplama Maliyeti**: Büyük veri setlerinde performans sorunları yaşayabilir.
+
+---
+
+### 5. XGBoost
+
+#### Avantajlar:
+- **Yüksek Performans**: Büyük veri setlerinde iyi genelleme yeteneği sağlar.
+- **Optimize Edilmiş Yapı**: Hızlı ve etkili sonuçlar verir.
+
+#### Dezavantajlar:
+- **Daha Fazla Parametre Ayarı**: Hyperparameter tuning gereklidir.
+- **Medium Risk Seviyesi Performansı**: Orta risk seviyelerinde precision düşüktür.
+
+---
+
+### Genel Karşılaştırmalı Sonuç
 
 #### Doğruluk (Accuracy):
-- Random Forest en yüksek doğruluk oranına sahiptir (0.685).
-- Lojistik Regresyon ve SVM, doğruluk açısından benzer sonuçlar göstermiştir (0.667).
+- Random Forest: En yüksek doğruluk oranına sahiptir (0.685).
+- XGBoost: 0.590 ile diğer algoritmalardan düşük performans göstermiştir.
+- KNN: Genel doğruluk oranı 0.600 ile ortalamada yer almaktadır.
 
 #### F1-Score:
-- Random Forest, F1-Score açısından en iyi sonuçları vermektedir. Bu, dengesiz veri setlerinde daha güvenilir tahminler yaptığını gösterir.
-
+- Random Forest: F1-Score açısından en iyi sonuçları vermektedir. Bu, dengesiz veri setlerinde daha güvenilir tahminler yaptığını gösterir.
+- SVM ve Logistic Regression: F1-Score açısından benzer sonuçlar göstermektedir.
+  
 #### Sınıf Dengesizliği:
 - Tüm algoritmalar, düşük risk seviyelerinde daha iyi sonuçlar verirken, Medium risk seviyesinde genellikle düşük performans sergilemiştir. Bu, veri setindeki sınıf dengesizliğinden kaynaklanıyor olabilir.
 
 #### Uygun Algoritma Seçimi:
-- Eğer Medium risk seviyesi için tahminler daha kritikse, Lojistik Regresyon tercih edilebilir.
+- Eğer Medium risk seviyesi için tahminler daha kritikse, Logistic Regression tercih edilebilir.
 - Daha dengeli bir performans için Random Forest önerilir.
-- Sınıf ayrımı daha belirgin olan veri setlerinde SVM daha iyi performans gösterebilir.
-
+- Büyük veri setleri ve optimize bir yapı için XGBoost tercih edilebilir.
+  
 ---
 
 ## 18. Accuracyyi Artırma Yöntemleri
