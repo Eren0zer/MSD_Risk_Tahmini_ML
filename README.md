@@ -625,83 +625,100 @@ for model, scores in evaluation_results.items():
 
 ### Analiz:
 
-### 1. Random Forest
+### Random Forest
 
 #### Avantajlar:
-- **Dengeli Performans**: Random Forest, tüm etiketler için dengeli bir performans göstermektedir.
-- **Düşük Risk Doğruluğu**: Özellikle düşük MSD risk seviyelerinde daha iyi bir doğruluk oranı sunar.
+- **Dengeli Performans:** Random Forest, tüm etiketler için dengeli bir performans göstermiştir. Özellikle `High` etiketi için doğruluk %66.87 ile en iyi sonuçlardan birini vermiştir.
+- **Ortalama F1-Score:** Tüm etiketler için F1-Score değerleri makul bir seviyededir, bu da sınıflandırma başarısının genel olarak iyi olduğunu göstermektedir.
 
 #### Dezavantajlar:
-- **Orta Risk Hataları**: Medium risk seviyesi için hatalı tahmin oranı görece yüksektir.
+- **Düşük Doğruluk:** `Low` etiketi için doğruluk %51.94 ile düşüktür. Bu, düşük riskli öğrencileri ayırt etmede zorluk yaşandığını gösterir.
+- **Dengesiz Precision ve Recall:** `Medium` ve `Low` risk seviyelerinde dengesizlik görülmüştür; özellikle `True` sınıflarının precision ve recall değerleri düşüktür.
+
+#### Yorum:
+Random Forest, özellikle dengeli bir performans sunmak istediğimiz durumlarda kullanılabilir. Ancak sınıflar arasında görülen dengesizlik, özellikle `Low` etiketi için modelin iyileştirilmesi gerektiğini göstermektedir.
 
 ---
 
-### 2. Lojistik Regresyon
+### Logistic Regression
 
 #### Avantajlar:
-- **Hızlı Performans**: Basit yapısı sayesinde veri setinde hızlı çalışmaktadır.
-- **Orta Risk İçin Yüksek Geri Çağırma**: Medium risk seviyesi için geri çağırma oranı yüksektir.
+- **Hızlı Performans:** Logistic Regression, hem eğitim hem de tahmin süreçlerinde hızlı çalışmıştır.
+- **Düşük Risk İçin Güçlü Performans:** `Low` etiketi için doğruluk %72.26 ile diğer algoritmalara göre daha yüksektir.
 
 #### Dezavantajlar:
-- **Precision Düşüklüğü**: High ve Low risk seviyeleri için precision düşüktür.
-- **Dengesiz Performans**: Etiketler arası performans farklılıkları bulunmaktadır.
+- **Zayıf Precision ve Recall:** `High` ve `Medium` etiketlerinde `True` sınıflarının ayırt edilmesi zor olmuştur.
+- **Dengesiz Performans:** Etiketler arasında belirgin bir performans farkı bulunmaktadır.
+
+#### Yorum:
+Logistic Regression, düşük risk seviyelerinde güçlü sonuçlar verirken, daha karmaşık sınıf yapılarında sınırlı performans göstermiştir. Dengesiz sınıf yapısına rağmen düşük risk gruplarını hedefleyen bir analizde kullanılabilir.
 
 ---
 
-### 3. SVM
+### Support Vector Machine (SVM)
 
 #### Avantajlar:
-- **Low Risk İçin En Yüksek Precision**: Low risk seviyesi için en iyi precision değerini sağlar.
-- **Ayrım Yeteneği**: Farklı sınıfların ayrıcı çizgisini belirlemede başarılıdır.
+- **Düşük Risk İçin Güçlü Performans:** `Low` etiketi için precision %69 ve recall %72 ile dikkat çekmiştir.
+- **Orta Risk İçin İyi Recall:** `Medium` etiketi için %68.06 doğruluk, bu risk seviyesi için uygun sonuçlar sağlamıştır.
 
 #### Dezavantajlar:
-- **Orta Risk F1 Skoru**: Medium risk seviyesi için düşük bir F1 skoru bulunmaktadır.
-- **Hesaplama Maliyeti**: Diğer algoritmalara göre hesaplama süresi daha uzun olabilir.
+- **Zayıf Performans:** `High` etiketi için recall ve F1-Score değerleri diğer algoritmalara göre düşüktür.
+- **Hesaplama Süresi:** Logistic Regression gibi algoritmalara kıyasla daha uzun süre almıştır.
+
+#### Yorum:
+SVM, özellikle düşük risk seviyelerinde sınıflandırma yapmak için uygundur. Ancak `High` etiketi ve genel doğruluk açısından Logistic Regression veya Random Forest'tan daha az etkili olmuştur.
 
 ---
 
-### 4. KNN (K-Nearest Neighbors)
+### K-Nearest Neighbors (KNN)
 
 #### Avantajlar:
-- **Kolay Yorumlanabilirlik**: KNN, parametresiz ve kolay anlaşılabilir bir algoritmadır.
-- **Orta Risk Seviyesi Performansı**: Precision ve recall değerleri dengelidir.
+- **Kolay Yorumlanabilirlik:** KNN, parametresiz bir yöntem olduğu için kolayca uygulanabilir.
+- **Orta Risk Performansı:** `Medium` etiketi için dengeli precision ve recall sonuçları elde edilmiştir.
 
 #### Dezavantajlar:
-- **Hassasiyet Eksikliği**: Aykırı değerlere karşı hassastır.
-- **Hesaplama Maliyeti**: Büyük veri setlerinde performans sorunları yaşayabilir.
+- **Düşük Performans:** Genel doğruluk oranı %60.01 ile düşük seviyededir.
+- **Hassasiyet Eksikliği:** Aykırı değerlere karşı oldukça hassastır ve veri setinin büyüklüğüne bağlı olarak performans sorunları yaşayabilir.
+
+#### Yorum:
+KNN, basit veri setlerinde veya açıklayıcı sonuçlar arandığında tercih edilebilir. Ancak bu veri setinde doğruluk ve F1-Score açısından diğer algoritmalara göre daha düşük performans göstermiştir.
 
 ---
 
-### 5. XGBoost
+### XGBoost
 
 #### Avantajlar:
-- **Yüksek Performans**: Büyük veri setlerinde iyi genelleme yeteneği sağlar.
-- **Optimize Edilmiş Yapı**: Hızlı ve etkili sonuçlar verir.
+- **Büyük Veri Setleri İçin Uygun:** XGBoost, büyük ve karmaşık veri setlerinde optimize edilmiş performans sunar.
+- **Optimize Yapı:** Daha hızlı eğitim süresi sağlamıştır.
 
 #### Dezavantajlar:
-- **Daha Fazla Parametre Ayarı**: Hyperparameter tuning gereklidir.
-- **Medium Risk Seviyesi Performansı**: Orta risk seviyelerinde precision düşüktür.
+- **Düşük Performans:** `Medium` ve `Low` etiketlerinde F1-Score değerleri düşük seviyededir.
+- **Parametre Ayarı Gereksinimi:** İyi sonuçlar almak için hyperparameter tuning gereklidir.
+
+#### Yorum:
+XGBoost, genelleme yeteneği ile öne çıkmaktadır. Ancak bu veri setinde sınıf dengesizliği nedeniyle `Medium` ve `Low` etiketlerinde beklenen performansı sağlayamamıştır.
 
 ---
 
-### Genel Karşılaştırmalı Sonuç
+### Karşılaştırmalı Genel Analiz
 
-#### Doğruluk (Accuracy):
-- Random Forest: En yüksek doğruluk oranına sahiptir (0.685).
-- XGBoost: 0.590 ile diğer algoritmalardan düşük performans göstermiştir.
-- KNN: Genel doğruluk oranı 0.600 ile ortalamada yer almaktadır.
+| **Algoritma**         | **High Doğruluk (%)** | **Medium Doğruluk (%)** | **Low Doğruluk (%)** | **Genel Doğruluk (%)** |
+|------------------------|-----------------------|--------------------------|-----------------------|-------------------------|
+| Random Forest          | 66.87                | 62.93                   | 51.94                | 60.58                  |
+| Logistic Regression    | 72.26                | 68.06                   | 59.66                | 66.66                  |
+| SVM                    | 72.26                | 68.06                   | 59.87                | 66.73                  |
+| KNN                    | 64.75                | 63.08                   | 52.20                | 60.01                  |
+| XGBoost                | 63.76                | 62.10                   | 51.37                | 59.08                  |
 
-#### F1-Score:
-- Random Forest: F1-Score açısından en iyi sonuçları vermektedir. Bu, dengesiz veri setlerinde daha güvenilir tahminler yaptığını gösterir.
-- SVM ve Logistic Regression: F1-Score açısından benzer sonuçlar göstermektedir.
-  
-#### Sınıf Dengesizliği:
-- Tüm algoritmalar, düşük risk seviyelerinde daha iyi sonuçlar verirken, Medium risk seviyesinde genellikle düşük performans sergilemiştir. Bu, veri setindeki sınıf dengesizliğinden kaynaklanıyor olabilir.
+#### Genel Yorum:
+- **Logistic Regression ve SVM:** En yüksek genel doğruluk oranlarına sahip algoritmalardır. Ancak sınıf dengesi açısından iyileştirme yapılabilir.
+- **Random Forest:** Dengeli performans sunmuş, özellikle `High` etiketi için iyi sonuçlar elde etmiştir.
+- **KNN ve XGBoost:** Performans açısından diğer algoritmalardan düşük sonuçlar almıştır. XGBoost'un daha iyi performans göstermesi için parametre ayarları yapılmalıdır.
 
-#### Uygun Algoritma Seçimi:
-- Eğer Medium risk seviyesi için tahminler daha kritikse, Logistic Regression tercih edilebilir.
-- Daha dengeli bir performans için Random Forest önerilir.
-- Büyük veri setleri ve optimize bir yapı için XGBoost tercih edilebilir.
+#### Uygulama Önerileri:
+- Daha dengeli sınıf sonuçları için Random Forest önerilir.
+- `Low` etiketi odaklı bir analiz için Logistic Regression kullanılabilir.
+- Daha büyük veri setlerinde optimize performans sağlamak için XGBoost tercih edilebilir.
   
 ---
 
